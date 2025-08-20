@@ -3,3 +3,6 @@ venv
 
 # requirements
 requirements.txt
+
+# Python cache
+__pycache__/
