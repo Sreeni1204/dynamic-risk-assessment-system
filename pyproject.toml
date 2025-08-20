@@ -1,6 +1,6 @@
 [project]
 name = "dynamic-risk-assessment-system"
-version = "0.1.0"
+dynamic = ["version"]
 description = "Project for dynamic risk assessment system"
 authors = [
     {name = "Sreeni1204",email = "hvsreenivasa93@gmail.com"}
@@ -13,9 +13,25 @@ dependencies = [
     "matplotlib (>=3.10.5)",
     "pandas (>=2.3.1)",
     "scikit-learn (>=1.7.1)",
-    "seaborn (>=0.13.2)"
+    "seaborn (>=0.13.2)",
+    "toml (>=0.10.2)",
 ]
 
+[tool.poetry]
+packages = [{ include = "dynamic_risk_assessment_system" }]
+version = "0.1.0-dev"
+
+[tool.poetry.scripts]
+dynamic_risk_assessment_system = "dynamic_risk_assessment_system.app:main"
+
+[tool.poetry.requires-plugins]
+poetry-dynamic-versioning = { version = ">=1.0.0,<2.0.0", extras = ["plugin"] }
+poetry-plugin-bundle = { version = ">=1.7.0,<=2.0.0" }
+
+[tool.poetry-dynamic-versioning]
+enable = true
+pattern = "default-unprefexied"
+bump = true
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
