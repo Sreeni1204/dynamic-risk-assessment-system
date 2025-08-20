@@ -1,0 +1,8 @@
+{
+    "base_data_path": "/home/sreeni/Udacity/MLOps/Projects/dynamic-risk-assessment-system/data/practicedata",
+    "input_folder_path": "/home/sreeni/Udacity/MLOps/Projects/dynamic-risk-assessment-system/data/sourcedata",
+    "output_folder_path": "/home/sreeni/Udacity/MLOps/Projects/dynamic-risk-assessment-system/models/models",
+    "test_data_path": "/home/sreeni/Udacity/MLOps/Projects/dynamic-risk-assessment-system/data/testdata",
+    "output_model_path": "/home/sreeni/Udacity/MLOps/Projects/dynamic-risk-assessment-system/models/models",
+    "prod_deployment_path": "/home/sreeni/Udacity/MLOps/Projects/dynamic-risk-assessment-system/models/production_deployment"
+}
